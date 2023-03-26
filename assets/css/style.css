@@ -1,0 +1,25 @@
+.section-marquee .alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: #ff0000;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section-marquee .alert a {
+    color: #ff0000;
+}
+
+.section-marquee .alert a:hover {
+    color: #ef3434;
+    text-decoration: underline;
+}
+
+.section-marquee .alert > i {
+    font-size: 1.2em;
+}
