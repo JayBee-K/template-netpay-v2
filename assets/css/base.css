@@ -220,8 +220,31 @@ input[type='number'] {
 
 @media (min-width: 1400px) {
 	.container, .container-lg, .container-md, .container-sm, .container-xl {
-		max-width: 1480px;
+		max-width: 1400px;
 		width: 80%;
 		min-width: 1320px;
 	}
+}
+
+.button-theme {
+	border-radius: 4px;
+	padding: 10px;
+	gap: 8px;
+	font-size: 1em;
+	background-color: rgba(var(--bs-white-rgb), 0.15);
+	color: var(--bs-white);
+	transition: var(--transition-default);
+	border: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+}
+
+.button-theme.button-theme_primary {
+	background-color: var(--primary-color);
+}
+
+.button-theme.button-theme_primary:hover {
+	background-color: var(--primary-hover);
 }

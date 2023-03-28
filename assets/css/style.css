@@ -322,7 +322,106 @@
 	left: 8px;
 }
 
+.section-hero .section-hero_slider--item {
+	border-radius: 8px;
+}
+
+.section-hero .section-hero_actions [class*=section-hero_actions] {
+	border: 2px solid var(--bs-white);
+	background-color: rgba(var(--bs-dark-rgb), 0.1);
+	width: 50px;
+	height: 50px;
+	font-size: 1.5em;
+}
+
+.section-hero .section-hero_actions [class*=section-hero_actions]:hover {
+	border: 2px solid var(--primary-color);
+	background-color: var(--primary-color);
+}
+
+.section-hero .section-hero_actions .section-hero_actions--prev {
+	left: 15px;
+}
+
+.section-hero .section-hero_actions .section-hero_actions--next {
+	right: 15px;
+}
+
+.section-hero .hero-form {
+	box-shadow: 0 4px 10px rgba(11, 70, 116, .1);
+	border-radius: 10px;
+	border-bottom: 4px solid var(--primary-color) !important;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background-color: rgba(var(--primary-rgb), .05) !important;
+}
+
+.section-hero .hero-form .hero-form_header {
+	padding: 25px 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.section-hero .hero-form .hero-form_header .hero-form_title {
+	font-size: 1.7em;
+	font-weight: 700;
+	color: var(--bs-gray-1000);
+}
+
+.section-hero .hero-form .hero-form_icon {
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: var(--bs-white);
+	font-size: 2.4em;
+	top: -15px;
+	left: -15px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.section-hero .hero-form .hero-form_body {
+	padding: 15px;
+}
+
+.section-hero .hero-form .form-item {
+	position: relative;
+}
+
+.section-hero .hero-form .form-item .form-select,
+.section-hero .hero-form .form-item .form-control {
+	font-size: 1em;
+	min-height: 44px;
+}
+
+.section-hero .hero-form .form-item.form-icon .form-button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	background-color: transparent;
+	border-radius: 0;
+	border: 0;
+	font-size: 1.2em;
+	color: var(--bs-gray-600);
+	padding: 5px;
+}
+
+.section-hero .hero-form .form-item.form-icon .form-button:hover {
+	color: var(--bs-gray-1000);
+
+}
+
 .section-counter {
+	border-top: 1px solid #ededed;
 	border-bottom: 1px solid #ededed;
 }
 
