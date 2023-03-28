@@ -556,3 +556,37 @@
 .payment-item:hover {
     filter: grayscale(50%);
 }
+
+.service-item {
+    gap: 15px;
+    padding: 8px;
+    border: 1px solid #ededed;
+}
+
+.service-item .service-item_image {
+    max-width: 80px;
+}
+
+.service-item .service-item_content {
+    gap: 2px;
+}
+
+.service-item .service-item_content .service-item_title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--bs-gray-1000);
+}
+
+.service-item .service-item_content .service-item_desc {
+    font-size: 1em;
+    line-height: 1.5;
+    color: var(--bs-gray-700);
+}
+
+.service-item:hover {
+    background-color: rgba(var(--primary-rgb), 0.075);
+}
+
+.service-item:hover .service-item_content .service-item_title {
+    color: var(--primary-color);
+}
