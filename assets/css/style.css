@@ -559,12 +559,10 @@
 
 .service-item {
 	gap: 15px;
-	padding: 8px;
-	border: 1px solid #ededed;
 }
 
 .service-item .service-item_image {
-	max-width: 80px;
+	max-width: 120px;
 }
 
 .service-item .service-item_content {
@@ -572,19 +570,10 @@
 }
 
 .service-item .service-item_content .service-item_title {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 700;
 	color: var(--bs-gray-1000);
-}
-
-.service-item .service-item_content .service-item_desc {
-	font-size: 1em;
-	line-height: 1.5;
-	color: var(--bs-gray-700);
-}
-
-.service-item:hover {
-	background-color: rgba(var(--primary-rgb), 0.075);
+	text-align: center;
 }
 
 .service-item:hover .service-item_content .service-item_title {
