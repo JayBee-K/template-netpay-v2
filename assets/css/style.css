@@ -377,6 +377,28 @@
 	color: #000 !important;
 }
 
+@media screen and (max-width: 1270px) {
+	.header .header-bottom .header-language .header-language_button span {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1270px) {
+	.header .header-bottom .header-logo > img {
+		height: 45px;
+	}
+
+	.header .header-bottom .header-navigation > ul > li > a {
+		padding: 25px 8px;
+		white-space: nowrap;
+		font-size: .95em;
+	}
+
+	.header .header-bottom .header-language {
+		margin-left: 18px;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	.header .header-top {
 		display: none;
@@ -521,6 +543,7 @@
 		margin-right: 0;
 	}
 
+
 	.header .header-bottom .header-users_mobile {
 		position: relative;
 		margin-left: 15px;
@@ -532,10 +555,6 @@
 	.header .header-bottom .header-users_mobile .header-users_btn {
 		color: var(--bs-white);
 		font-size: 1.3em;
-	}
-
-	.header .header-bottom .header-language .header-language_button span {
-		display: none;
 	}
 
 	.header .header-bottom .header-users_mobile > ul {
@@ -667,12 +686,16 @@
 	background-color: rgba(var(--primary-rgb), .05) !important;
 }
 
+.section-hero .hero-form .hero-form_header .nav-tabs {
+	gap: 8px;
+}
+
 .section-hero .hero-form .hero-form_header .nav-tabs .nav-item .nav-link {
 	background-color: rgba(var(--primary-rgb), .1);
-	padding: 10px 15px;
-	gap: 5px;
+	padding: 10px;
+	gap: 8px;
 	color: var(--bs-gray-1000);
-	border-bottom: 2px solid var(--primary-color) !important;
+	border-radius: 6px;
 }
 
 .section-hero .hero-form .hero-form_header .nav-tabs .nav-item .nav-link.active {
@@ -680,8 +703,12 @@
 	color: var(--bs-white);
 }
 
+.section-hero .hero-form .hero-form_header .hero-form_tab {
+	padding: 10px;
+}
+
 .section-hero .hero-form .hero-form_header .hero-form_title {
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 700;
 }
 
@@ -690,11 +717,11 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	font-size: 1.6em;
+	font-size: 1.1em;
 }
 
 .section-hero .hero-form .hero-form_body {
-	padding: 20px 15px 15px;
+	padding: 10px 15px 15px;
 }
 
 .section-hero .hero-form .form-item {
@@ -749,6 +776,10 @@
 
 	.section-hero .hero-form .hero-form_header .hero-form_title {
 		font-size: 1em;
+	}
+
+	.section-hero .hero-form .hero-form_header .nav-tabs {
+		overflow-x: auto;
 	}
 }
 
@@ -916,10 +947,6 @@
 
 .service-item {
 	gap: 15px;
-}
-
-.service-item .service-item_image {
-	max-width: 120px;
 }
 
 .service-item .service-item_content {
