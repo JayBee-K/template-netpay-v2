@@ -263,6 +263,14 @@ input[type='number'] {
 	background-color: var(--primary-hover);
 }
 
+.button-theme.button-theme_secondary {
+	background-color: #ED3439;
+}
+
+.button-theme.button-theme_secondary:hover {
+	background-color: #c62a2e;
+}
+
 @media (min-width: 1200px) {
 	.row-cols-xl-8 > * {
 		flex: 0 0 auto;
