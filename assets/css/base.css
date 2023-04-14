@@ -210,6 +210,25 @@ input[type='number'] {
 	color: var(--bs-gray-700);
 }
 
+.section-heading .heading-tabs .nav-tabs {
+	gap: 12px;
+}
+
+.section-heading .heading-tabs .nav-tabs .nav-link {
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: var(--bs-gray-1000);
+	background-color: var(--bs-gray-200);
+}
+
+.section-heading .heading-tabs .nav-tabs .nav-link:hover,
+.section-heading .heading-tabs .nav-tabs .nav-link.active {
+	background-color: var(--primary-color);
+	color: var(--bs-white);
+}
+
 @media screen and (max-width: 991px) {
 	.section-heading {
 		margin-bottom: 24px;
@@ -220,6 +239,10 @@ input[type='number'] {
 	}
 
 	.section-heading .heading-description {
+		font-size: 1em;
+	}
+
+	.section-heading .heading-tabs .nav-tabs .nav-link {
 		font-size: 1em;
 	}
 }
