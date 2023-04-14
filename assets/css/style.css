@@ -696,6 +696,7 @@
 	gap: 8px;
 	color: var(--bs-gray-1000);
 	border-radius: 6px;
+	font-size: 1.05em;
 }
 
 .section-hero .hero-form .hero-form_header .nav-tabs .nav-item .nav-link.active {
@@ -709,7 +710,7 @@
 
 .section-hero .hero-form .hero-form_header .hero-form_title {
 	font-size: 1em;
-	font-weight: 700;
+	letter-spacing: .5px;
 }
 
 .section-hero .hero-form .hero-form_icon {
@@ -955,5 +956,34 @@
 }
 
 .service-item:hover .service-item_content .service-item_title {
+	color: var(--primary-color);
+}
+
+.section-breadcrumb .breadcrumb-item {
+	color: var(--bs-gray-600);
+	position: relative;
+	padding-left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+	float: none;
+	margin-left: calc(1.25 * var(--bs-breadcrumb-item-padding-x));
+	padding-right: calc(1.25 * var(--bs-breadcrumb-item-padding-x));
+	content: "\f105";
+	font-family: "Font Awesome 5 Pro";
+	color: var(--bs-gray-600);
+	font-weight: 300;
+	font-size: 1.25em;
+	transform: translateY(2px);
+}
+
+.section-breadcrumb .breadcrumb-item > a {
+	color: var(--bs-gray-1000);
+}
+
+.section-breadcrumb .breadcrumb-item > a:hover {
 	color: var(--primary-color);
 }
